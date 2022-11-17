@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:white;
+  padding-bottom: 50px;
+}
+
+.container  {
+  max-width: 1200px;
+
+
+  
+}
+
+.nav {
+  position: fixed;
+  background-color:#272925;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color:#E0E0E0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color:#d00000;
+  font-weight: bold;
+ 
+}
+
+
+.hero {
+  background-image: url('背景图片.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+  font-weight: bolder;
+}
+
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+.signout{
+  float: right;
+	background-color:#000;
+	color:white;
+	height: 50;
+	width: 60;
+	display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.Workex{
+	bottom: auto;
+}
+.shuru{
+	float:left;
+	padding-left: 80px;
+	margin-left: 300px;
+	text-align: center;
+  font-weight: bolder;
+  color:#d00000;
+  font-size: large;
+}
+.ed{	
+float: left;
+margin-left: 25px;
+margin-right: 3;
+}
+
+.footer2 {  
+  position: fixed;  
+        left: 10px;  
+        bottom: 5px;  
+        right: 10px;  
+        width: 100%;  
+        background-color: rgb(0, 255, 251);  
+        color: rgb(0, 0, 0);  
+        text-align: center;  
+		font-size: 30px;
+		font-weight: bold;
+  }  
+  .button
+	{
+		display: inline-block;
+		margin-top: 2em;
+		padding: 0.8em 2em;
+		background:#d00000
+		line-height: 1.8em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		font-size: 1em;
+		color: #FFF;
+	}
+	
+	.button:before
+	{
+		display: inline-block;
+		background: #8DCB89;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #272925;
+	}
+.tubiao
+{
+  float: left;
+margin-left: 0;
+  
+} 
+#logo h1 a
+{
+  display: inline-block;
+  margin-bottom: 0.20em;
+  padding: 0.20em 0.9em;
+  font-size: 3.5em;
+  color:white ;
+}
+.wrapper1
+	{
+		overflow: hidden;
+		padding: 0em 0em 5em 0em;
+		background: rgb(255, 255, 255);
+		background-size: auto;
+	}
+  #header
+	{
+		text-align: center;
+	}
+  
+  .title
+	{
+		margin-bottom: 3em;
+		background-image: url();
+	}
+
+	.title2
+	{
+		background-image:  url("product-images/bread.jpg");
+		background-size: cover;
+	}
+	
+	.title h2
+	{
+		font-size: 2.8em;
+	}
+	
+	.joke {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+  }
+ 
+
+
+
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+ul.tools li a:before
+{
+  display: inline-block;
+  background: #1ABC9C;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  line-height: 120px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.fat{
+  margin: 500;
+}
+#btnEmpty {
+	background-color:white;
+	border:white 1px solid;
+	padding: 5px 10px;
+	color:#efefef;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+.btnAddAction {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#product-grid .txt-heading {
+	margin-bottom: 18px;
+}
+
+.product-item {
+	float: left;
+	background: #ffffff;
+	margin: 30px 30px 0px 0px;
+	border: #E0E0E0 1px solid;
+}
+
+.product-image {
+	height: 155px;
+	width: 250px;
+	background-color: #FFF;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.demo-input-box {
+	border-radius: 2px;
+	border: #CCC 1px solid;
+	padding: 2px 1px;
+}
+
+.tbl-cart {
+	font-size: 0.9em;
+}
+
+.tbl-cart th {
+	font-weight: normal;
+}
+
+.product-title {
+	margin-bottom: 20px;
+}
+
+.product-price {
+	float:left;
+}
+
+.cart-action {
+	float: right;
+}
+
+.product-quantity {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+
+.product-tile-footer {
+    padding: 15px 15px 0px 15px;
+    overflow: auto;
+}
+
+.cart-item-image {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.no-records {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}
+#shopping-cart {
+	margin: 40px;
+}
+
+#product-grid {
+	margin: 40px;
+}
+
+#shopping-cart table {
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+#shopping-cart table td {
+	background-color: #FFFFFF;
+}
+
+.txt-heading {
+	color: #211a1a;
+	border-bottom: 1px solid #E0E0E0;
+	overflow: auto;
+}
+
+.txt-heading2 {
+	color: #211a1a;
+	border-bottom: 10px solid #E0E0E0;
+	overflow: auto;
+}
+.wrapper{
+ 
+  text-align: center;
+  margin: 200;
+}
+
+
+#three-column #tbox1,
+	#three-column #tbox2,
+	#three-column #tbox3
+	{
+		float: left;
+		width: 320px;
+		padding: 80px 40px 80px 40px;
+    background-color:#8DCB89;
+	}
+	
+	#three-column .title
+	{
+		text-align: left;
+   
+	}
+	
+	#three-column .title h2
+	{
+		font-size: 1.60em;
+    
+	}
+	
+	#three-column .title .byline
+	{
+		padding-top: 0.50em;
+		font-size: 0.90em;
+		color: #858585;
+    
+	}
+
+	#three-column .arrow-down
+	{
+		border-top-color: #292929;
+	}
