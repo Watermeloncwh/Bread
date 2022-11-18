@@ -1,3 +1,68 @@
+.rp{
+  color: #000;
+  font-weight: bolder;
+  font-size: large;
+}
+.uf{
+  text-align: center;
+}
+p{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+  #three-column #tbox1,
+	#three-column #tbox2,
+	#three-column #tbox3{
+    background-image:url('wpcolumn.png');
+float: left;
+    height: 300px;
+    width: 400px;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 80vh;
+  align-items: center;
+  }
+  #three-column #tbox1{
+    border:darkcyan 5px solid;
+    color: #d00000;
+
+  }
+  #three-column #tbox2{border:darkred 5px solid;
+    color: blue;
+
+  }
+  #three-column #tbox3{
+    border:darkseagreen 5px solid;
+    color: darkorchid;
+  }
+  .ib{
+    color: #1ABC9C;
+  }
+  .aa h2{
+font-size: 50px;
+    text-align: center;
+    color: #d00000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 60px;
+ line-height: 100px;
+  }
+  .aa {
+    text-align: center;
+  color:indigo;
+  background-image: url('aboutus');
+  background-size: cover;
+  background-position: bottom center;
+  height: 80vh;
+  margin-bottom: 20px;
+  }
+  .aa p{
+    font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 50px;
+
+  }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
