@@ -1,9 +1,9 @@
-<?php
+<?html
 
 session_start();
 
 // Include config file
-require_once "config3.php";
+require_once "config3.html";
  
 // Define variables and initialize with empty values
 $name = $address =  $username = $password = $salary = "";
@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Records created successfully. Redirect to landing page
-                header("location: orderonline.php");
+                header("location: orderonline.html");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -103,7 +103,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body>
     <nav class="nav">
       <div class="container">
-    
         <ul>
         <li><a href="index.html" accesskey="1" title="">Home</a></li>
 				<li><a href="aboutus.html" accesskey="2" title="">About US</a></li>
@@ -112,6 +111,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				<li><a href="contactus.html" accesskey="5" title="">Contact Us</a></li>
 				<li><a class="current" href="register.html" accesskey="6" title="">register vip</a></li>
         </ul>
+        <h1 class="logo"><a href="/index.html">Welcome to Luca’s Loaves<br>(click here back to home)</a></h1>
         <img src="tubiao.png" width="200" height="100" alt=""/>
       </div>
     </nav>
@@ -123,40 +123,40 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       </div>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper3">
       <div id="welcome" class="container">
         <p class="rp">Please fill this form and submit to add employee record to the database.</p>
-                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        <form action="<?html echo htmlspecialchars($_SERVER["html_SELF"]); ?>" method="post">
                             <div class="form-group3">
                                 <label>Name</label>
-                                <input type="text" name="name" class="form-control <?php echo (!empty($name_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $name; ?>">
-                                <span class="invalid-feedback"><?php echo $name_err;?></span>
+                                <input type="text" name="name" class="form-control <?html echo (!empty($name_err)) ? 'is-invalid' : ''; ?>" value="<?html echo $name; ?>">
+                                <span class="invalid-feedback"><?html echo $name_err;?></span>
                             </div>
                             <div class="form-group1">
                                 <label>Address</label>
-                                <textarea name="address" class="form-control <?php echo (!empty($address_err)) ? 'is-invalid' : ''; ?>"><?php echo $address; ?></textarea>
-                                <span class="invalid-feedback"><?php echo $address_err;?></span>
+                                <textarea name="address" class="form-control <?html echo (!empty($address_err)) ? 'is-invalid' : ''; ?>"><?html echo $address; ?></textarea>
+                                <span class="invalid-feedback"><?html echo $address_err;?></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group4">
                                 <label>username</label>
-                                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                                <span class="invalid-feedback"><?php echo $username_err;?></span>
+                                <input type="text" name="username" class="form-control <?html echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?html echo $username; ?>">
+                                <span class="invalid-feedback"><?html echo $username_err;?></span>
                             </div>
                             <div class="form-group">
                                 <label>password</label>
-                                <input type="text" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
-                                <span class="invalid-feedback"><?php echo $password_err;?></span>
+                                <input type="text" name="password" class="form-control <?html echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?html echo $password; ?>">
+                                <span class="invalid-feedback"><?html echo $password_err;?></span>
                             </div>
                             <div class="form-group2">
                                 <label>Salary</label>
-                                <input type="text" name="salary" class="form-control <?php echo (!empty($salary_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $salary; ?>">
-                                <span class="invalid-feedback"><?php echo $salary_err;?></span>
+                                <input type="text" name="salary" class="form-control <?html echo (!empty($salary_err)) ? 'is-invalid' : ''; ?>" value="<?html echo $salary; ?>">
+                                <span class="invalid-feedback"><?html echo $salary_err;?></span>
                             </div>
                             
                             <a href="orderonline.html" class="btn btn-secondary ml-2"><input type="submit" class="btn btn-primary" value="Submit">
-                            </a>
+                            </a></div>
     
-      </div>
+     
       
         <footer  class="footer2">  
             The creator of this website is Watermelon
